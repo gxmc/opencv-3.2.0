@@ -737,6 +737,7 @@ Finally, there are STL-style iterators that are smart enough to skip gaps betwee
 The matrix iterators are random-access iterators, so they can be passed to any STL algorithm,
 including std::sort().
 */
+/* Mat 是一个非常优秀的图像类,它同时也是一个通用的矩阵类,可以用来创建和操作多维矩阵 */
 class CV_EXPORTS Mat
 {
 public:
@@ -752,7 +753,7 @@ public:
     @param rows Number of rows in a 2D array.
     @param cols Number of columns in a 2D array.
     @param type Array type. Use CV_8UC1, ..., CV_64FC4 to create 1-4 channel matrices, or
-    CV_8UC(n), ..., CV_64FC(n) to create multi-channel (up to CV_CN_MAX channels) matrices.
+    CV_8UC(n), ..., CVt_64FC(n) to create multi-channel (up to CV_CN_MAX channels) matrices.
     */
     Mat(int rows, int cols, int type);
 
